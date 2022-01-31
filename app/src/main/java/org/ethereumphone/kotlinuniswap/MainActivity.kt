@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity(), Session.Callback {
         uniswap_swapRouter = Uniswap_SwapRouter.load(
             swapRouterAddress,
             web3j,
-            Credentials.create("c6141ab081e9c1c04955994b4eadaef733189436ad3f87543a67e71e5fda8a82"),
+            Credentials.create("c6141ab081e9c1c04955994b4eadaef733189436ad3f87543a67e71e5fda8a82"), // Not a used private-key
             DefaultGasProvider()
         )
         val connectToWallet = findViewById<Button>(R.id.connectToWallet)
